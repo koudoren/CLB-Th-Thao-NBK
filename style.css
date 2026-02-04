@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top bar */
+.top-bar {
+    background: #0b4da2;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #0b4da2;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    height: 380px;    
+    background-image: url("5.jpg");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+}
+
+/* Giới thiệu */
+.about {
+    display: flex;
+    padding: 50px;
+    background: #f7f7f7;
+}
+
+.about-text {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.about-text h2 {
+    color: #0b4da2;
+    margin-bottom: 15px;
+}
+
+.about-text button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0b4da2;
+    color: white;
+    border: none;
+}
+
+.about-video {
+    width: 50%;
+}
+
+.video-box {
+    height: 200px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tour */
+.tour {
+    padding: 50px;
+    text-align: center;
+}
+
+.tour h2 {
+    margin-bottom: 30px;
+    color: #0b4da2;
+}
+
+.tour-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tour-card {
+    width: 30%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+
+.tour-img {
+    height: 180px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dubai { background: #03a9f4; }
+.taiwan { background: #ff9800; }
+.chauau { background: #4caf50; }
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-school {
+    height: 60px;
+}
+
+.logo-sports {
+    height: 80px;     
+}
+.banner-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e69500;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #cc8400;
+}
+.banner-text {
+    text-align: center;
+}
+
+/* Dòng chính */
+.banner-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 58px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: #e69500; 
+
+    background: none;
+    padding: 0;
+    border-radius: 0;
+
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Khẩu hiệu */
+.banner-slogan {
+    margin-top: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    color: #f2f2f2; 
+    text-transform: uppercase;
+
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.footer {
+    background: #102a43;          
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: #e6e6e6;             
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer a:hover {
+    color: #ffb300;               
+    text-decoration: underline;
+}
+.section-box {
+    background: #f7f7f7;  
+    padding: 60px 0;
+}
+
+.section-inner {
+    width: 90%;      
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.section-box h2 {
+    font-size: 32px;
+    color: #102a43;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-box h2 {
+    font-size: 36px;
+    color: #0b4da2;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.section-box::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ffb300;
+    margin: 0 auto 25px;
+    border-radius: 2px;
+}
+.section-box {
+    background: #f7f7f7;
+    padding: 80px 0;   
+}
+
+.section-inner {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-box h2 {
+    font-size: 36px;
+    color: #0b4da2;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.section-desc {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: auto;
+}
+.achievement-item {
+    margin-top: 30px;
+}
+
+.achievement-item img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: auto;
+}
+
+.achievement-caption {
+    display: block;
+    margin-top: 16px;
+    font-size: 17px;
+    color: #0b4da2;
+    text-decoration: none;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.achievement-caption span {
+    color: #ff8c00;
+    font-size: 15px;
+}
+
+.achievement-caption:hover {
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
